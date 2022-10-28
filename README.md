@@ -14,6 +14,13 @@ yarn dev
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 result.
 
+## Issue:
+
+Trying to mix server-renderer components and client-side rendered components
+often time fails with a cryptic error. To render components client-side, I am
+just using the `"use client";` command at the top of the component. Removing
+this and rendering the all the components server-side works fine without issue.
+
 ## Issues to reproduce
 
 1. Start up server and navigate to `localhost:3000`
